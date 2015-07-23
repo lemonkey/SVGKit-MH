@@ -1,11 +1,12 @@
 Pod::Spec.new do |s|
-  s.name        = 'SVGKit'
+  s.name        = 'SVGKit-MH'
   s.version     = '2.x'
   s.license     = 'MIT'
   s.platform    = :ios, '5.0'
-  s.summary     = "Display and interact with SVG Images on iOS, using native rendering (CoreAnimation)."
-  s.homepage = 'https://github.com/SVGKit/SVGKit'
-  s.author   = { 'Steven Fusco'    => 'github@stevenfusco.com',
+  s.summary     = "Display and interact with SVG Images on iOS, using native rendering (CoreAnimation) (MedHelp fork)."
+  s.homepage = 'https://github.com/medhelpintl/SVGKit-MH'
+  s.author   = { 'MedHelp'	   => 'iphone@medhelp.org', 
+		 'Steven Fusco'    => 'github@stevenfusco.com',
                  'adamgit'         => 'adam.m.s.martin@gmail.com',
                  'Kevin Stich'     => 'stich@50cubes.com',
                  'Joshua May'      => 'notjosh@gmail.com',
@@ -14,7 +15,7 @@ Pod::Spec.new do |s|
                  'Moritz Pfeiffer' => 'moritz.pfeiffer@alp-phone.ch',
                  'Steven Fusco'    => 'sfusco@spiral.local',
                  'Eric Man'        => 'Eric@eric-mans-macbook-2.local' }
-  s.source   = { :git => 'https://github.com/SVGKit/SVGKit.git', :branch => "2.x" }
+  s.source   = { :git => 'https://github.com/medhelpintl/SVGKit-MH.git', :branch => "2.x" }
 
   s.ios.source_files = 'Source/*{.h,m}', 'Source/DOM classes/**/*.{h,m}', 'Source/Exporters/*.{h,m}', 'Source/Parsers/**/*.{h,m}', 'Source/QuartzCore additions/**/*.{h,m}', 'Source/Sources/**/*.{h,m}', 'Source/UIKit additions/**/*.{h,m}', 'Source/Unsorted/**/*.{h,m}'
   s.libraries = 'xml2'
