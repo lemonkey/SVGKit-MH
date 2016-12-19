@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = 'SVGKit-MH'
-  s.version     = '2.0.2'
+  s.version     = '2.0.5'
   s.license     = 'MIT'
   s.platform    = :ios, '5.0'
   s.summary     = "Display and interact with SVG Images on iOS, using native rendering (CoreAnimation) (MedHelp fork)."
@@ -22,8 +22,8 @@ Pod::Spec.new do |s|
   s.libraries = 'xml2'
   s.framework = 'QuartzCore', 'CoreText'
   s.dependency 'CocoaLumberjack', '~> 2.x'
-  s.prefix_header_file = 'XCodeProjectData/SVGKit-iOS/SVGKit-iOS-Prefix.pch'
-  s.requires_arc = false
+  s.prefix_header_file = 'SVGKitLibrary/SVGKit-iOS/SVGKit-iOS-Prefix.pch'
+  s.requires_arc = true
   s.xcconfig = {
     'CLANG_CXX_LANGUAGE_STANDARD' => 'gnu++11',
     'CLANG_CXX_LIBRARY' => 'libc++',
